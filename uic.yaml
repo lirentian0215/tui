@@ -14,7 +14,7 @@ proxies:
     request-timeout: 8000
     fast-open: true
   - name: deji-tuic                          
-    server: 2a02:180:6:1::4232                      
+    server: servcie.lirentian.fr.nf                      
     port: 57164                                    
     type: tuic
     uuid: cbea05b0-b3a8-4cb3-8a80-7bbee111db3e       
