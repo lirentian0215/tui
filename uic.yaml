@@ -1,62 +1,7 @@
 proxies:
-  - name: jp-tuic
-    server: jp-trojan.aliz.work
-    port: 9443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
-  - name: deji-tuic                          
-    server: servcie.lirentian.fr.nf                      
-    port: 57164                                    
-    type: tuic
-    uuid: cbea05b0-b3a8-4cb3-8a80-7bbee111db3e       
-    password: cbea05b0-b3a8-4cb3-8a80-7bbee111db3e   
-    alpn: [h3]
-    disable-sni: true
-    reduce-rtt: true
-    udp-relay-mode: native
-    congestion-controller: bbr
-    sni: www.bing.com                                
-    skip-cert-verify: true
   - name: sj-tuic
     server: sj-trojan.aliz.work
     port: 9443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
-  - name: la-tuic
-    server: 142.171.184.253
-    port: 9443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
-  - name: kr-tuic
-    server: kr.252798.xyz
-    port: 6443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
     password: foobar
@@ -82,9 +27,64 @@ proxies:
     reduce-rtt: true
     request-timeout: 8000
     fast-open: true
+  - name: la-tuic
+    server: 142.171.184.253
+    port: 9443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: jp-tuic
+    server: jp-trojan.aliz.work
+    port: 9443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
   - name: us-tuic
     server: us.aliz.work
     port: 9443
+    type: tuic
+    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
+    password: foobar
+    heartbeat-interval: 10000
+    alpn: [h3]
+    udp-relay-mode: quic
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    request-timeout: 8000
+    fast-open: true
+  - name: deji-tuic                          
+    server: servcie.lirentian.fr.nf                      
+    port: 57164                                    
+    type: tuic
+    uuid: cbea05b0-b3a8-4cb3-8a80-7bbee111db3e       
+    password: cbea05b0-b3a8-4cb3-8a80-7bbee111db3e   
+    alpn: [h3]
+    disable-sni: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+    sni: www.bing.com                                
+    skip-cert-verify: true
+  - name: kr-tuic
+    server: kr.252798.xyz
+    port: 6443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
     password: foobar
