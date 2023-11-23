@@ -14,18 +14,18 @@ proxies:
     request-timeout: 8000
     fast-open: true
   - name: deji-tuic                          
-    server: 2604:4300:a:14d:8964::137                      
-    port: 16095                                    
+    server: 2a02:180:6:1::4232                      
+    port: 57164                                    
     type: tuic
-    uuid: ad6ccab4-f440-4899-ab67-96708789afcc       
-    password: ad6ccab4-f440-4899-ab67-96708789afcc   
+    uuid: cbea05b0-b3a8-4cb3-8a80-7bbee111db3e       
+    password: cbea05b0-b3a8-4cb3-8a80-7bbee111db3e   
     alpn: [h3]
     disable-sni: true
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
     sni: www.bing.com                                
-    skip-cert-verify: true 
+    skip-cert-verify: true
   - name: sj-tuic
     server: sj-trojan.aliz.work
     port: 9443
