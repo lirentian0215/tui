@@ -330,3 +330,5 @@ proxies:
       password: rObhdH4a89qzQa8oAgMycQ==
       version: 3
       client-fingerprint: chrome
+  - {"name":"runcode.io-80","type":"vless","server":"2606:4700:8de9:cce2:77d9:fbd1:8ef1:f7aa","port":80,"uuid":"4a175400-f491-4b1e-a126-76e167e8759f","tls":false,"servername":"silicon-rooms-successfully-vehicle.trycloudflare.com","network":"ws","ws-opts":{"path":"4a175400","headers":{"host":"silicon-rooms-successfully-vehicle.trycloudflare.com"}}}
+  - {"name":"runcode.io-443","type":"vless","server":"2606:4700:8de9:cce2:77d9:fbd1:8ef1:f7aa","port":443,"uuid":"4a175400-f491-4b1e-a126-76e167e8759f","tls":true,"servername":"silicon-rooms-successfully-vehicle.trycloudflare.com","network":"ws","ws-opts":{"path":"4a175400","headers":{"host":"silicon-rooms-successfully-vehicle.trycloudflare.com"}}}
