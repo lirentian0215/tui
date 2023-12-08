@@ -21,6 +21,20 @@ proxies:
     udp-relay-mode: native
     skip-cert-verify: true
     congestion-controller: bbr
+  - name: Reality-hk
+    type: vless
+    server: 50.114.159.50
+    port: 443
+    uuid: c30a6e97-f6af-436b-b1ff-783de101da26
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 54dLB3oZLfOTI2kLb_3aZmKsTkyRyDJG9HY9gty0C2Y
+      short-id: b01fca648e7353ca
   - name: la-tuic
     server: la.aliz.work
     port: 9443
