@@ -98,45 +98,9 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: sj-shadowtls
-    type: ss
-    server: 45.139.193.213
-    port: 3443
-    cipher: 2022-blake3-aes-128-gcm
-    password: rObhdH4a89qzQa8oAgMycQ==
-    smux:
-        enabled: false
-        protocol: h2mux
-        max-connections: 4
-        min-streams: 4
-        only-tcp: false
-    plugin: shadow-tls
-    plugin-opts:
-      host: "addons.mozilla.org"
-      password: rObhdH4a89qzQa8oAgMycQ==
-      version: 3
-      client-fingerprint: chrome
   - name: jp1-shadowtls
     type: ss
     server: 147.78.247.80
-    port: 3443
-    cipher: 2022-blake3-aes-128-gcm
-    password: rObhdH4a89qzQa8oAgMycQ==
-    smux:
-        enabled: false
-        protocol: h2mux
-        max-connections: 4
-        min-streams: 4
-        only-tcp: false
-    plugin: shadow-tls
-    plugin-opts:
-      host: "addons.mozilla.org"
-      password: rObhdH4a89qzQa8oAgMycQ==
-      version: 3
-      client-fingerprint: chrome
-  - name: jp-shadowtls
-    type: ss
-    server: 195.245.242.126
     port: 3443
     cipher: 2022-blake3-aes-128-gcm
     password: rObhdH4a89qzQa8oAgMycQ==
