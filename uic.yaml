@@ -1,32 +1,26 @@
 proxies:
-  - name: sj-tuic
-    server: sj-trojan.aliz.work
-    port: 9443
+  - name: sudu280
+    server: tuic3.dtku47.xyz
+    port: 12255
     type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
+    uuid: ed6a538a-6e66-4f21-a769-4b389bb2f3ab
+    password: dongtaiwang
     alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
     request-timeout: 8000
-    fast-open: true
-  - name: jp-tuic
-    server: jp-trojan.aliz.work
-    port: 9443
+    udp-relay-mode: native
+    congestion-controller: bbr
+  - name: sudu270 
+    server: 108.181.24.7
+    port: 23450
     type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
+    uuid: 3618921b-adeb-4bd3-a2a0-f98b72a674b1
+    password: dongtaiwang
+    sni: bing.com
     alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
     request-timeout: 8000
-    fast-open: true
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr
   - name: deji-tuic                          
     server: servcie.lirentian.fr.nf                      
     port: 57164                                    
@@ -56,7 +50,7 @@ proxies:
     fast-open: true
   - name: us-tuic
     server: us.aliz.work
-    port: 9443
+    port: 6443
     type: tuic
     uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
     password: foobar
@@ -68,45 +62,9 @@ proxies:
     reduce-rtt: true
     request-timeout: 8000
     fast-open: true
-  - name: kr-grpc-vision
-    type: vless
-    server: 193.122.124.191
-    port: 3443
-    skip-cert-verify: true
-    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
-    tls: true
-    udp: true
-    flow: 
-    servername: www.docker.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sing-box"
-      grpc-multi-mode: true
-    reality-opts:
-      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
-      short-id: "5d2e3ed92cf8a73b"
-    client-fingerprint: chrome
   - name: jp1-grpc-vision
     type: vless
     server: 147.78.247.80
-    port: 3443
-    skip-cert-verify: true
-    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
-    tls: true
-    udp: true
-    flow: 
-    servername: www.docker.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sing-box"
-      grpc-multi-mode: true
-    reality-opts:
-      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
-      short-id: "5d2e3ed92cf8a73b"
-    client-fingerprint: chrome
-  - name: jp-grpc-vision
-    type: vless
-    server: 195.245.242.126
     port: 3443
     skip-cert-verify: true
     uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
@@ -140,78 +98,6 @@ proxies:
       public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
       short-id: "5d2e3ed92cf8a73b"
     client-fingerprint: chrome
-  - name: hka-grpc-vision
-    type: vless
-    server: 43.154.55.240
-    port: 443
-    skip-cert-verify: true
-    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
-    tls: true
-    udp: true
-    flow: 
-    servername: www.docker.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sing-box"
-      grpc-multi-mode: true
-    reality-opts:
-      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
-      short-id: "5d2e3ed92cf8a73b"
-    client-fingerprint: chrome
-  - name: la-grpc-vision
-    type: vless
-    server: 142.171.184.253
-    port: 443
-    skip-cert-verify: true
-    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
-    tls: true
-    udp: true
-    flow: 
-    servername: www.docker.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sing-box"
-      grpc-multi-mode: true
-    reality-opts:
-      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
-      short-id: "5d2e3ed92cf8a73b"
-    client-fingerprint: chrome
-  - name: us-grpc-vision
-    type: vless
-    server: 104.36.85.36
-    port: 443
-    skip-cert-verify: true
-    uuid: 8ed8efb7-457e-4f8f-a903-713fe04ad1c2
-    tls: true
-    udp: true
-    flow: 
-    servername: www.docker.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: "sing-box"
-      grpc-multi-mode: true
-    reality-opts:
-      public-key: daANefCDgE-0VHJLkPqHjtZ_HUTu-95Fnmk6E8rjfEU
-      short-id: "5d2e3ed92cf8a73b"
-    client-fingerprint: chrome
-  - name: kr-shadowtls
-    type: ss
-    server: 193.122.124.191
-    port: 7443
-    cipher: 2022-blake3-aes-128-gcm
-    password: rObhdH4a89qzQa8oAgMycQ==
-    smux:
-        enabled: false
-        protocol: h2mux
-        max-connections: 4
-        min-streams: 4
-        only-tcp: false
-    plugin: shadow-tls
-    plugin-opts:
-      host: "addons.mozilla.org"
-      password: rObhdH4a89qzQa8oAgMycQ==
-      version: 3
-      client-fingerprint: chrome
   - name: sj-shadowtls
     type: ss
     server: 45.139.193.213
@@ -302,25 +188,3 @@ proxies:
       password: rObhdH4a89qzQa8oAgMycQ==
       version: 3
       client-fingerprint: chrome
-  - name: sudu280
-    server: tuic3.dtku47.xyz
-    port: 12255
-    type: tuic
-    uuid: ed6a538a-6e66-4f21-a769-4b389bb2f3ab
-    password: dongtaiwang
-    alpn: [h3]
-    request-timeout: 8000
-    udp-relay-mode: native
-    congestion-controller: bbr
-  - name: sudu270 
-    server: 108.181.24.7
-    port: 23450
-    type: tuic
-    uuid: 3618921b-adeb-4bd3-a2a0-f98b72a674b1
-    password: dongtaiwang
-    sni: bing.com
-    alpn: [h3]
-    request-timeout: 8000
-    udp-relay-mode: native
-    skip-cert-verify: true
-    congestion-controller: bbr
