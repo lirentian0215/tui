@@ -10,11 +10,11 @@ proxies:
     udp-relay-mode: native
     congestion-controller: bbr
   - name: sudu270 
-    server: 108.181.24.7
-    port: 23450
+    server: 64.110.25.10
+    port: 11227
     type: tuic
-    uuid: 3618921b-adeb-4bd3-a2a0-f98b72a674b1
-    password: dongtaiwang
+    uuid: 764b539f-2d3c-4772-9731-5ebf6984af98
+    password: dongtaiwang.com
     sni: bing.com
     alpn: [h3]
     request-timeout: 8000
@@ -35,20 +35,6 @@ proxies:
     reality-opts:
       public-key: 54dLB3oZLfOTI2kLb_3aZmKsTkyRyDJG9HY9gty0C2Y
       short-id: b01fca648e7353ca
-  - name: la-tuic
-    server: la.aliz.work
-    port: 9443
-    type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
-    alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
-    disable-sni: true
-    reduce-rtt: true
-    request-timeout: 8000
-    fast-open: true
   - name: deji-tuic                          
     server: servcie.lirentian.fr.nf                      
     port: 57164                                    
@@ -62,20 +48,110 @@ proxies:
     congestion-controller: bbr
     sni: www.bing.com                                
     skip-cert-verify: true
-  - name: us-tuic
-    server: us.aliz.work
-    port: 6443
+  - name: vless-reality-vision节点-tj1
+    type: vless
+    server: 107.173.15.52
+    port: 11101
+    uuid: 81d527fd-5bbf-40fc-b2b0-be1956133aa6
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts:
+      public-key: 96rCrwpoQSnrBypLNWeZvJgpVaQWEL3EuZFnRFrseR4
+      short-id: 93da8109
+    client-fingerprint: chrome
+  - name: vmess-ws节点-tj1
+    type: vmess
+    server: 107.173.15.52
+    port: 2086
+    uuid: 81d527fd-5bbf-40fc-b2b0-be1956133aa6
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: www.bing.com
+    ws-opts:
+      path: "81d527fd-5bbf-40fc-b2b0-be1956133aa6-vm"
+      headers:
+        Host: www.bing.com
+  - name: hysteria2节点-tj1
+    type: hysteria2
+    server: 107.173.15.52
+    port: 42855
+    password: 81d527fd-5bbf-40fc-b2b0-be1956133aa6
+    alpn:
+      - h3
+    sni: www.bing.com
+    skip-cert-verify: true
+    fast-open: true
+  - name: tuic5节点-tj1
+    server: 107.173.15.52
+    port: 14758
     type: tuic
-    uuid: 37d59edb-6e4f-43ff-a439-ee87f0216de8
-    password: foobar
-    heartbeat-interval: 10000
+    uuid: 81d527fd-5bbf-40fc-b2b0-be1956133aa6
+    password: 81d527fd-5bbf-40fc-b2b0-be1956133aa6
     alpn: [h3]
-    udp-relay-mode: quic
-    congestion-controller: bbr
     disable-sni: true
     reduce-rtt: true
-    request-timeout: 8000
+    udp-relay-mode: native
+    congestion-controller: bbr
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: vless-reality-vision节点-us
+    type: vless
+    server: 142.171.174.206
+    port: 35472
+    uuid: b46cb204-5849-4b86-852d-8154fb8eb580
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts:
+      public-key: xFgONyWY60GD019VYsV31jo6L9lUdLCEQNY2RZKgsFQ
+      short-id: cedb773b
+    client-fingerprint: chrome
+  - name: vmess-ws节点-us
+    type: vmess
+    server: 142.171.174.206
+    port: 8880
+    uuid: b46cb204-5849-4b86-852d-8154fb8eb580
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: www.bing.com
+    ws-opts:
+      path: "b46cb204-5849-4b86-852d-8154fb8eb580-vm"
+      headers:
+        Host: www.bing.com
+  - name: hysteria2节点-us
+    type: hysteria2
+    server: 142.171.174.206
+    port: 15090
+    password: b46cb204-5849-4b86-852d-8154fb8eb580
+    alpn:
+      - h3
+    sni: www.bing.com
+    skip-cert-verify: true
     fast-open: true
+  - name: tuic5节点-us
+    server: 142.171.174.206
+    port: 61213
+    type: tuic
+    uuid: b46cb204-5849-4b86-852d-8154fb8eb580
+    password: b46cb204-5849-4b86-852d-8154fb8eb580
+    alpn: [h3]
+    disable-sni: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+    sni: www.bing.com
+    skip-cert-verify: true
   - name: la-shadowtls
     type: ss
     server: 142.171.184.253
